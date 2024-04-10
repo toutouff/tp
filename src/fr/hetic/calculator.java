@@ -1,14 +1,14 @@
 package fr.hetic;
 
 public class calculator {
-  private static int Calculator(int num1,int num2,String operator) {
+  static int Calculator(int num1,int num2,String operator) {
     switch (operator) {
       case "*":
         return num1 * num2;
       case "-":
         return num1 - num2;
       case "+":
-        return num1*num2;
+        return num1+num2;
       default:return 9999;
     }
   }
