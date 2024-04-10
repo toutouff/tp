@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class filewriter {
-    public static void FileWriter(String path, int[] resArray) {
+    public static void FileWriter(String path, String[] resArray) {
         String[] filepath = path.split("\\.");
         String filename = filepath[0] + ".res";
         try {
