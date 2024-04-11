@@ -21,7 +21,7 @@ public class filereader {
         }
         return res;
     }
-    private static String[] arrayAppend(String[] array,String appendedValueString){
+    public static String[] arrayAppend(String[] array,String appendedValueString){
         String[] resArray = new String[array.length+1];
         for (int i = 0; i < array.length; i++) {
             resArray[i] = array[i];
