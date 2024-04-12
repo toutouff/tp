@@ -15,7 +15,7 @@ public class DatabaseReader {
         try {
             Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
             Statement stmt = conn.createStatement();
-            String sql = "SELECT * FROM FICHIER INNER JOIN LIGNE ON FICHIER.ID = LIGNE.FICHIER_ID WHERE FICHIER.TYPE = 'OP' ORDER BY FICHIER.ID,POSITION;\n";
+            String sql = "SELECT * FROM FICHIER INNER JOIN LIGNE ON FICHIER.ID = LIGNE.FICHIER_ID WHERE FICHIER.TYPE = 'OP';\n";
             ResultSet rs = stmt.executeQuery(sql);
             return rs;
         } catch (SQLException e) {
